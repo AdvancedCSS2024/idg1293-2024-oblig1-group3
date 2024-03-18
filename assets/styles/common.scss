@@ -3,6 +3,11 @@
 // Example: input, button, card ...
 
 // Colors
+$licorice: #464646;
+$primaryBlue: #0063fb;
+$milk: #FFFFFF;
+$secondaryBlue: #06befb;
+
 $colors: (
     licorice: #464646,
     primaryBlue: #0063fb,
@@ -10,25 +15,55 @@ $colors: (
     secondaryBlue: #06befb,
 );
 
-// BEM "Stylesheet"
-.topbar{
+body{
     background-color: $milk;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-    &__ul{
+// BEM "Stylesheet"
+header{
+    color: $licorice;
+    font-size: 16px;
+
+    &__topbar{
         
     }
 
+    &__nav{
+        margin: 0 340.333px;
+        padding: 0 3px;
+
+    }
+
     &__link{
-        font-size: 16px;
-        color: $licorice;
-        font-family: Arial, Helvetica, sans-serif;
         text-decoration: none;
     }    
+
+    &__link--img{
+
+    }
     &hover{
         cursor: pointer;
         text-decoration: solid;
         border-color: $primaryBlue;
         }
+}
+
+.searchbar{
+
+    &__button{
+
+    }
+    &__map{
+
+    }
+}
+
+.grid{
+    
+    &__marked{
+
+    }
 }
 
 
