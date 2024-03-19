@@ -8,16 +8,16 @@ $primaryBlue: #0063fb;
 $milk: #FFFFFF;
 $secondaryBlue: #06befb;
 
-// Font
-
 $colors: (
     licorice: #464646,
     primaryBlue: #0063fb,
     milk: #FFFFFF,
     secondaryBlue: #06befb,
 );
+
+//BEM stylesheet
 html{
-    font-size: 62,5%;
+    font-size: 62.5%;
 }
 
 body{
@@ -25,51 +25,52 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 340.333px;
     padding: 0 31px;
-
-    & a:link{
-        text-decoration: none;
-    }
     
 }
-// BEM "Stylesheet"
+
+
 .topbar{
     color: $licorice;
     max-width:100% ;
     height: 50px;
     
-    & a{
-        
+    .topbar__nav a:link{
+        text-decoration: none;
         font-size: 12px;
         margin: 0 0 0 8px;
         display: flex;
+        flex-direction: row;
         justify-content: center;
+ 
         }
     
-    & .topbar__nav:hover{
+    .topbar__nav a:hover{
         cursor: pointer;
         text-decoration: underline;
         border-color: $primaryBlue;
-        }  
+        }
+    
 }
 
 .searchbar{
     width: 80%;
     height: 50px;
 
-    & .searchbar{
-
-    }
-    & .searchbar__map{
-
-    }
 }
 
 .grid{
     
-    & .grid__marked{
+    .grid__marked{
         display: grid;
         grid-template-columns: repeat(6, minmax(10.4rem 1fr));
     }
+
+    .grid__marked__svg{
+        width: 42px;
+        height: 28px;
+        outline-color: $secondaryBlue;
+    }
+
 }
 
 
