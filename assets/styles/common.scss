@@ -23,20 +23,20 @@ body{
 // BEM "Stylesheet"
 header{
     color: $licorice;
-    font-size: 16px;
 
     &__topbar{
         
     }
 
     &__nav{
-        margin: 0 340.333px;
+        margin: 0 340px;
         padding: 0 3px;
-
     }
 
     &__link{
         text-decoration: none;
+        font-size: 12px;
+        margin: 0 0 0 8px,
     }    
 
     &__link--img{
