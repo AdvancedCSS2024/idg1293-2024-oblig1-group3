@@ -8,6 +8,8 @@ $primaryBlue: #0063fb;
 $milk: #FFFFFF;
 $secondaryBlue: #06befb;
 
+// Font
+
 $colors: (
     licorice: #464646,
     primaryBlue: #0063fb,
@@ -21,35 +23,31 @@ body{
 }
 
 // BEM "Stylesheet"
-header{
+.topbar{
     color: $licorice;
-
-    &__topbar{
-        
-    }
 
     &__nav{
         margin: 0 340px;
         padding: 0 3px;
+        display: flex;
     }
 
-    &__link{
+    &__a{
         text-decoration: none;
         font-size: 12px;
         margin: 0 0 0 8px,
-    }    
-
-    &__link--img{
-
     }
-    &hover{
+
+    &:hover{
         cursor: pointer;
-        text-decoration: solid;
+        text-decoration: underline;
         border-color: $primaryBlue;
         }
 }
 
 .searchbar{
+    width: ;
+    height: ;
 
     &__button{
 
