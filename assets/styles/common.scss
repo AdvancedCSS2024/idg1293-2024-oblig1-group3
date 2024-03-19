@@ -23,39 +23,60 @@ body{
     max-width:100% ;
     height: 50px;
     align-items: baseline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #finnLogo{
+        width: 92px;
+        height: 32px;
+    }
     
     a {
         font-size: 12px;
         margin: 0 0 0 8px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        }
-    
-    a:hover{
+        
+
+     a:hover{
         cursor: pointer;
         text-decoration: underline;
         border-color: #0063fb;
+        border-bottom-width: 2px;
         }
 
     svg{
         width: 24px;
         height: 24px;
+        }
     }
+
+    &__right{
+        
+    }
+    
     
 }
 
 .searchbar{
-    width: 80%;
-    height: 50px;
+    
+    &__input{
+        width: 80%;
+        height: 50px;
+    }
+
+    &__button--hidden{
+        visibility: hidden;
+    }
 
 }
 
-.grid{
+
+nav.grid{
     display: grid;
-    grid-template-columns: repeat(6, minmax(10.4rem 1fr));
-    
-    div{
+    grid-template-columns: repeat(6, 1fr);
+
+    &__marked{
+        text-align: center;
 
         svg{
             width: 42px;
@@ -64,12 +85,15 @@ body{
         }
 
         span{
+            display: block;
             font-size: 14px;
         }
-    }
+    }       
 
-   
+}
 
+.card{
+    display: flex;
 }
 
 
