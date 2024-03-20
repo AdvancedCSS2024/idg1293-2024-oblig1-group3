@@ -94,21 +94,19 @@ svg{
 .searchbar{
     padding-top: 1.6rem;
 
-    &__input{
-        margin: 1.6rem 0 1.6rem 0;
-        position: relative;
-        width: 90%;
-        height: 50px;
-        padding: 12px 40px 12px 8px;
-    }
-    
-    &__button{
-        position: absolute;
-        top: 0rem;
-        bottom: 0rem;
-        right: 0rem;
-        background-color: transparent;
-    }
+        &__input{
+            margin: 1.6rem 0 1.6rem 0;
+            width: 90%;
+            height: 50px;
+            padding: 12px 40px 12px 8px;
+        }
+        
+        &__button{
+            position: absolute;
+            top: 5rem;
+            right: 24rem;
+            background-color: transparent;
+        }
 
     &__map{
         font-size: 16px;
