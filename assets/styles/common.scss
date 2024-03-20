@@ -31,13 +31,20 @@ main,
         color: $licorice;
         max-width:100% ;
         height: 50px;
-        align-items: baseline;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 12px;
 
         .left{
             margin: 0 263.896px;
+            width: 216.75px;
+        }
+        .right{
+            padding: 0 1rem 0 1rem;
+            margin-right: 1rem;
+            position: relative;
+            width: 106.67px;
         }
 
         #finnLogo{
@@ -46,8 +53,8 @@ main,
         }
         
         a {
-            font-size: 12px;
             margin: 0 0 0 8px;
+            height: 49px;
             
 
         a:hover{
@@ -65,14 +72,34 @@ main,
     }
 
     .searchbar{
+        margin: 1.6rem 0 1.6rem 0;
+        
         
         &__input{
-            width: 80%;
+            width: 90%;
             height: 50px;
+            padding: 12px 40px 12px 8px;
+
+            &__button--hidden{
+                visibility: hidden;
+            }
+
+            &__button--visible{
+                visibility: visible;
+                z-index: 10px;
+                display: flex;
+                position: relative;
+                top: 0rem;
+                bottom: 0rem;
+                right: 0rem;
+            }
+
         }
 
-        &__button--hidden{
-            visibility: hidden;
+        
+
+        &__map{
+            font-size: 16px;
         }
 
     }
@@ -81,11 +108,12 @@ main,
     .grid{
         display: grid;
         grid-template-columns: repeat(6, 1fr);
+        text-align: center;
 
         &__marked{
-            text-align: center;
 
-            svg{
+            //svg
+            .icon{
                 width: 42px;
                 height: 28px;
                 outline-color: $secondaryBlue;
@@ -101,4 +129,13 @@ main,
 
     .card{
         display: flex;
+
+        &__1{
+            display: block;
+            position: relative;
+
+            img{
+                
+            }
+        }
     }
