@@ -1,3 +1,19 @@
-body {
+.login-page {
+  display: flex;
+  justify-content: space-between;
+}
+.login-page .wrapper .card_login_info {
+  width: 40%;
+  border: 1px solid;
   background-color: #F4F4F4;
+}
+.login-page .wrapper .card_login_info p {
+  text-align: center;
+}
+.login-page .wrapper .card_login_info .image_login_info img {
+  max-width: 10%;
+}
+.login-page .wrapper .card_form {
+  width: 40%;
+  border: 1px solid;
 }/*# sourceMappingURL=common.css.map */

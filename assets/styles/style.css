@@ -1,3 +1,23 @@
 body {
   background-color: #F4F4F4;
+}
+
+.login-page {
+  display: flex;
+  justify-content: space-between;
+}
+.login-page .card_login_info,
+.login-page .card_form {
+  width: 48%;
+}
+
+.card_login_info {
+  background-color: #F4F4F4;
+}
+.card_login_info .image_login_info {
+  display: inline-block;
+  margin: 0 auto;
+}
+.card_login_info p {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

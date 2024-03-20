@@ -9,5 +9,32 @@ $ice: #f1f9ff;
 $gray: #F4F4F4;
 
 body {
-    background-color: $gray;
+    
+}
+
+.login-page {
+    display: flex;
+    justify-content: space-between;
+
+    .wrapper {
+        .card_login_info {
+            width: 40%;
+            border: 1px solid;
+            background-color: $gray;
+
+            p {
+                text-align: center;
+            }
+
+            .image_login_info {
+                img {
+                    max-width: 10%;
+                }
+            }
+        }
+        .card_form {
+            width: 40%;
+            border: 1px solid;
+        }
+    }
 }
