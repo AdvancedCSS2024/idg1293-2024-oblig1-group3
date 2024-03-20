@@ -7,6 +7,13 @@ $primaryBlue: #0063fb;
 $secondaryBlue: #06befb;
 $licorice: #464646;
 
+$colors:(
+    milk: #FFFFFF,
+    primaryBlue: #0063fb,
+    secondaryBlue: #06befb,
+    licorice: #464646,
+);
+
 //BEM stylesheet
 html{
     font-size: 62.5%;
@@ -22,7 +29,7 @@ body{
 }
 
 main,
-.topbar__nav{
+.topbar{
     margin: 0 340.333px;
     padding: 0 31px;
 }
@@ -35,10 +42,23 @@ main,
         justify-content: center;
         align-items: center;
         font-size: 12px;
+        height: 49px;
+
+        a:hover{
+            cursor: pointer;
+            text-decoration: underline;
+            border-color: $primaryBlue;
+            border-bottom-width: 2px;
+        }
+
+        span{
+            margin: 0 0 0 8px;
+        }
 
         .left{
-            margin: 0 263.896px;
+            margin: 0 263.896px 0 0;
             width: 216.75px;
+            padding: 0;
         }
         .right{
             padding: 0 1rem 0 1rem;
@@ -50,26 +70,14 @@ main,
         #finnLogo{
             width: 92px;
             height: 32px;
-        }
-        
-        a {
-            margin: 0 0 0 8px;
-            height: 49px;
-            
+        }      
 
-        a:hover{
-            cursor: pointer;
-            text-decoration: underline;
-            border-color: $primaryBlue;
-            border-bottom-width: 2px;
-            }
-        }
+    }
         
         svg{
             width: 24px;
             height: 24px;
             }
-    }
 
     .searchbar{
         margin: 1.6rem 0 1.6rem 0;
@@ -96,8 +104,6 @@ main,
 
         }
 
-        
-
         &__map{
             font-size: 16px;
         }
@@ -111,8 +117,8 @@ main,
         text-align: center;
 
         &__marked{
+            padding: 16px 4px;
 
-            //svg
             .icon{
                 width: 42px;
                 height: 28px;
@@ -127,15 +133,41 @@ main,
 
     }
 
+.cards{
+    #h1{
+        font-size: 34px;
+    }
+
+    .h1__link{
+        font-size: 14px;
+        color: $primaryBlue;
+
+        :hover{
+            text-decoration: underline;
+        }
+    }
     .card{
         display: flex;
+        padding: 10px;
+
+        .text16{
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .text12{
+            font-size: 12px;
+        }
+
+        img{
+            width: 281.33px;
+            height: 290.67px;
+        }
 
         &__1{
             display: block;
             position: relative;
-
-            img{
-                
-            }
         }
+
+
     }
+}

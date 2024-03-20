@@ -24,7 +24,8 @@
       <a class="topbar__nav right" href=""><svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M1.5 12C1.5 6.201 6.201 1.5 12 1.5S22.5 6.201 22.5 12c0 3.136-1.375 5.952-3.555 7.876a10.497 10.497 0 00-13.89 0A10.474 10.474 0 011.5 12zm3.133 9.473A11.948 11.948 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12a11.98 11.98 0 004.62 9.463l.013.01zm1.644-.668a8.998 8.998 0 0111.446 0A10.451 10.451 0 0112 22.5a10.45 10.45 0 01-5.723-1.695zM7.5 9.75c0-.494.08-.97.226-1.414A9.461 9.461 0 0013.75 10.5L7.726 8.336 13.75 10.5c.929 0 1.851-.136 2.737-.403A4.5 4.5 0 017.5 9.75zM13.75 9c.884 0 1.76-.146 2.593-.432A4.502 4.502 0 008.45 6.982 7.961 7.961 0 0013.75 9zM6 9.75a5.972 5.972 0 01.843-3.068A6 6 0 116 9.75z" clip-rule="evenodd">
       </path></svg><span>Logg inn</span></a>
     </nav>
-  </div>  
+  </div> 
+  <hr> 
   <main>
     <form>
       <div class="searchbar">
@@ -87,7 +88,7 @@
         </div>
       </nav>
     </div>
-    <section>
+    <section class="cards">
       <div>
         <h1 id="h1">Anbefalinger til deg</h1>
         <a class="h1__link" href="">Hvorfor anbefaler vi disse annonsene?</a>
@@ -95,30 +96,27 @@
       <div class="card">
         <article class="card__1">
           <div>
-            <img class="card__img" src="" alt="">
-            <span>10 000 kr</span>
+            <img class="card__img" src="" alt=""><button class="card__button--hidden"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="1.5" d="M11.97 22c.606 0 .948-.53 1.925-1.565 1.22-1.295 2.397-2.501 3.251-3.408 2.523-2.676 3.515-3.691 4.219-4.484 1.87-2.105 2.113-5.03.845-7.252C20.61 2.491 18.225 2 16.942 2s-2.2.492-3.82 1.757L12 4.808l-1.093-1.051C9.15 2.255 7.876 2 7.06 2c-.68 0-3.525 0-5.358 3.291-1.338 2.402-.639 5.36 1.065 7.252.305.34 1.563 1.657 3.745 4.029.878.955 2.122 2.269 3.037 3.266.518.565 1.815 2.162 2.421 2.162z" clip-rule="evenodd"></path></svg></button></img>
+            <span class="text16">10 000 kr</span>
           </div>
-          <span>Nesoddtangen</span>
+          <span class="text12">Nesoddtangen</span>
           <h2>Lys toroms leilighet med hage og uteplass</h2>
-          <button class="card__button--hidden"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="1.5" d="M11.97 22c.606 0 .948-.53 1.925-1.565 1.22-1.295 2.397-2.501 3.251-3.408 2.523-2.676 3.515-3.691 4.219-4.484 1.87-2.105 2.113-5.03.845-7.252C20.61 2.491 18.225 2 16.942 2s-2.2.492-3.82 1.757L12 4.808l-1.093-1.051C9.15 2.255 7.876 2 7.06 2c-.68 0-3.525 0-5.358 3.291-1.338 2.402-.639 5.36 1.065 7.252.305.34 1.563 1.657 3.745 4.029.878.955 2.122 2.269 3.037 3.266.518.565 1.815 2.162 2.421 2.162z" clip-rule="evenodd"></path></svg></button>
         </article>
         <article class="card__2">
           <div>
-            <img class="card__img" src="" alt="">
+            <img class="card__img" src="" alt=""><button class="card__button--hidden"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="1.5" d="M11.97 22c.606 0 .948-.53 1.925-1.565 1.22-1.295 2.397-2.501 3.251-3.408 2.523-2.676 3.515-3.691 4.219-4.484 1.87-2.105 2.113-5.03.845-7.252C20.61 2.491 18.225 2 16.942 2s-2.2.492-3.82 1.757L12 4.808l-1.093-1.051C9.15 2.255 7.876 2 7.06 2c-.68 0-3.525 0-5.358 3.291-1.338 2.402-.639 5.36 1.065 7.252.305.34 1.563 1.657 3.745 4.029.878.955 2.122 2.269 3.037 3.266.518.565 1.815 2.162 2.421 2.162z" clip-rule="evenodd"></path></svg></button></img>
             <span>10 000 kr</span>
           </div>
           <span>Nesodden</span>
           <h2>Sokkelleilighet</h2>
-          <button class="card__button--hidden"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="1.5" d="M11.97 22c.606 0 .948-.53 1.925-1.565 1.22-1.295 2.397-2.501 3.251-3.408 2.523-2.676 3.515-3.691 4.219-4.484 1.87-2.105 2.113-5.03.845-7.252C20.61 2.491 18.225 2 16.942 2s-2.2.492-3.82 1.757L12 4.808l-1.093-1.051C9.15 2.255 7.876 2 7.06 2c-.68 0-3.525 0-5.358 3.291-1.338 2.402-.639 5.36 1.065 7.252.305.34 1.563 1.657 3.745 4.029.878.955 2.122 2.269 3.037 3.266.518.565 1.815 2.162 2.421 2.162z" clip-rule="evenodd"></path></svg></button>
         </article>
         <article class="card__3">
           <div>
-            <img class="card__img" src="" alt="">
+            <img class="card__img" src="" alt=""><button class="card__button--hidden"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="1.5" d="M11.97 22c.606 0 .948-.53 1.925-1.565 1.22-1.295 2.397-2.501 3.251-3.408 2.523-2.676 3.515-3.691 4.219-4.484 1.87-2.105 2.113-5.03.845-7.252C20.61 2.491 18.225 2 16.942 2s-2.2.492-3.82 1.757L12 4.808l-1.093-1.051C9.15 2.255 7.876 2 7.06 2c-.68 0-3.525 0-5.358 3.291-1.338 2.402-.639 5.36 1.065 7.252.305.34 1.563 1.657 3.745 4.029.878.955 2.122 2.269 3.037 3.266.518.565 1.815 2.162 2.421 2.162z" clip-rule="evenodd"></path></svg></button></img>
             <span>800 000 kr</span>
           </div>
           <span>Ålesund</span>
           <h2>Hel mikrohuspaviljiong m/3 mikrohus samlet eller hve...</h2>
-          <button class="card__button--hidden"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="1.5" d="M11.97 22c.606 0 .948-.53 1.925-1.565 1.22-1.295 2.397-2.501 3.251-3.408 2.523-2.676 3.515-3.691 4.219-4.484 1.87-2.105 2.113-5.03.845-7.252C20.61 2.491 18.225 2 16.942 2s-2.2.492-3.82 1.757L12 4.808l-1.093-1.051C9.15 2.255 7.876 2 7.06 2c-.68 0-3.525 0-5.358 3.291-1.338 2.402-.639 5.36 1.065 7.252.305.34 1.563 1.657 3.745 4.029.878.955 2.122 2.269 3.037 3.266.518.565 1.815 2.162 2.421 2.162z" clip-rule="evenodd"></path></svg></button>
         </article>
       </div>
     </section>
