@@ -1,3 +1,31 @@
 // YOU MUST USE BEM HERE
 // IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE 
 // Example: input, button, card ...
+$primaryBlue: #0063fb;
+$secondaryBlue: #06befb;
+$licorice: #464646;
+$milk: #FFFFFF;
+$ice: #f1f9ff;
+$gray: #F4F4F4;
+
+body {
+    display: flex;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid;
+    background-color: $fadeBlue;
+
+    p {
+        text-align: center;
+    }
+}
+
+.card2 {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid;
+
+}

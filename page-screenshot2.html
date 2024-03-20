@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Screenshot 1 page</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screenshot 1 page</title>
+    <link rel="stylesheet" href="./assets/styles/common.css" />
+  </head>
+  <body>
+    <main class="login-page">
+      <div class="card_login_info">
+        <div class="image"></div>
+        <div class="text">
+          <p>
+            Logg inn for å sende meldinger, lagre favoritter og søk. Du får også
+            varsler når det skjer noe nytt!
+          </p>
+          <p>
+            Problemer med innloggingen?
+            <a
+              href="https://hjelpesenter.finn.no/hc/no/sections/39454-Innlogging-og-passord"
+              target="_blank"
+              >Her kan du få hjelp</a
+            >
+          </p>
+          <p>
+            <a href="https://www.finn.no/" target="_blank">Tilbake til FINN</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <div class="card_form">
+      <div class="content">
+        <div class="topbar">
+          <div class="logo_link"></div>
+          <div class="logo_schibsted"></div>
+        </div>
+      </div>
+      <div class="card_form">
+        <h1>Logg inn</h1>
+        <input
+          type="email"
+          placeholder="Skriv inn din e-postadresse*"
+          required
+        />
+        <input
+          type="password"
+          placeholder="Vennligst oppgi passordet ditt*"
+          required
+        />
+        <a
+          href="https://payment.schibsted.no/authn/?client_sdrn=sdrn%3Aspid.no%3Aclient%3A5087dc1b421c7a0b79000000&nonce=b7426789-883d-4495-ad14-c562a962c604&state=f68da151e649de0afb247563e3eb52e20f6068bdfc190d7193a419052c7615cd255aae88aaabc90d7673c12c6ed31767552c238e0685ac35a26155e5892c2dbee62b6ad820446897901d55b57298a8952ffdd13832ac19e99c77bdef46dedb5d80ec783feaee50a356a6acf3515d33faa4bdf953ea72f214b65c18466ab08bab&client_id=5087dc1b421c7a0b79000000&one_step_login=true&teaser=login-v1&acr_values=password"
+          >Glemt passord?</a
+        >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="none"
+          viewBox="0 0 16 16"
+        >
+          <g clip-path="url(#rxwIyclip0_148_294)">
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M8 14.25a6.25 6.25 0 100-12.5 6.25 6.25 0 000 12.5zM15.75 8A7.75 7.75 0 11.25 8a7.75 7.75 0 0115.5 0zM8 12.75a.75.75 0 01-.75-.75V8a.75.75 0 011.5 0v4a.75.75 0 01-.75.75zM8 4a1 1 0 100 2 1 1 0 000-2z"
+              clip-rule="evenodd"
+            ></path>
+          </g>
+          <defs>
+            <clipPath id="rxwIyclip0_148_294">
+              <path
+                fill="currentColor"
+                d="M0 0h16v16H0z"
+                transform="rotate(-180 8 8)"
+              ></path>
+            </clipPath>
+          </defs>
+        </svg>
+        <button type="submit">Logg på</button>
+        <button type="button">Opprette ny konto</button>
+      </div>
+    </div>
+    
+  </body>
 </html>
