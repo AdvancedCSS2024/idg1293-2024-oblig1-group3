@@ -5,9 +5,16 @@ html {
 body {
   background-color: #FFFFFF;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 body a {
   text-decoration: none;
+}
+body button {
+  border: none;
+}
+body button:hover {
+  cursor: pointer;
 }
 
 main,
@@ -16,7 +23,7 @@ main,
   padding: 0 31px;
 }
 
-.topbar__nav {
+.topbar .topbar__nav {
   color: #464646;
   max-width: 100%;
   height: 50px;
@@ -26,27 +33,27 @@ main,
   font-size: 12px;
   height: 49px;
 }
-.topbar__nav a:hover {
+.topbar .topbar__nav a:hover {
   cursor: pointer;
   text-decoration: underline;
   border-color: #0063fb;
   border-bottom-width: 2px;
 }
-.topbar__nav span {
+.topbar .topbar__nav span {
   margin: 0 0 0 8px;
 }
-.topbar__nav .left {
+.topbar .topbar__nav .left {
   margin: 0 263.896px 0 0;
   width: 216.75px;
   padding: 0;
 }
-.topbar__nav .right {
+.topbar .topbar__nav .right {
   padding: 0 1rem 0 1rem;
   margin-right: 1rem;
   position: relative;
   width: 106.67px;
 }
-.topbar__nav #finnLogo {
+.topbar .topbar__nav #finnLogo {
   width: 92px;
   height: 32px;
 }
@@ -57,26 +64,23 @@ svg {
 }
 
 .searchbar {
-  margin: 1.6rem 0 1.6rem 0;
+  padding-top: 1.6rem;
 }
-.searchbar__input {
+.searchbar div {
+  margin: 1.6rem 0 1.6rem 0;
+  position: relative;
   width: 90%;
   height: 50px;
   padding: 12px 40px 12px 8px;
 }
-.searchbar__input__button--hidden {
-  visibility: hidden;
-}
-.searchbar__input__button--visible {
-  visibility: visible;
-  z-index: 10px;
-  display: flex;
-  position: relative;
+.searchbar div__button {
+  position: absolute;
   top: 0rem;
   bottom: 0rem;
   right: 0rem;
+  background-color: transparent;
 }
-.searchbar__map {
+.searchbar div__map {
   font-size: 16px;
 }
 
@@ -122,8 +126,15 @@ svg {
 .cards .card img {
   width: 281.33px;
   height: 290.67px;
+  border-radius: 8px;
 }
-.cards .card__1 {
+.cards .card__1, .cards .card__2, .cards .card__3 {
   display: block;
   position: relative;
+}
+.cards .card__1 .hidden, .cards .card__2 .hidden, .cards .card__3 .hidden {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
 }/*# sourceMappingURL=common.css.map */
