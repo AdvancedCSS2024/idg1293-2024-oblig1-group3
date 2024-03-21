@@ -8,7 +8,7 @@ $secondaryBlue: #06befb;
 $licorice: #464646;
 $stone:#767676;
 $sardine:#C3CCD9;
-$heartOutline: #E5E5E5;
+$grey200: #E5E5E5;
 
 //BEM stylesheet
 html{
@@ -103,7 +103,7 @@ svg{
             background-color: transparent;
             top: 0;
             bottom: 0;
-            right: 0;
+            right: 50px;
             }
         }
         
@@ -175,12 +175,26 @@ svg{
         display: flex;
         padding: 10px;
 
+        h2{
+            margin-bottom: 8px;
+            padding-right: 44px;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 700;
+        }
+
         .text16{
             font-size: 16px;
             font-weight: 700;
+            padding: 10px 16px 10px 10px;
+
+            
         }
         .text12{
             font-size: 12px;
+            line-height: 16px;
+            padding: 6px 0 6px 0;
+
         }
 
         img{
@@ -202,7 +216,7 @@ svg{
                 background-color: transparent;
 
                 svg{
-                    stroke: $heartOutline;
+                    stroke: $grey200;
                     width: 24px;
                     height: 24px;
                 }

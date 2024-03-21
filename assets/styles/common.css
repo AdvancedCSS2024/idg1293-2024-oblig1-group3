@@ -78,7 +78,7 @@ svg {
   background-color: transparent;
   top: 0;
   bottom: 0;
-  right: 0;
+  right: 50px;
 }
 
 .map {
@@ -135,12 +135,22 @@ svg {
   display: flex;
   padding: 10px;
 }
+.cards .card h2 {
+  margin-bottom: 8px;
+  padding-right: 44px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+}
 .cards .card .text16 {
   font-size: 16px;
   font-weight: 700;
+  padding: 10px 16px 10px 10px;
 }
 .cards .card .text12 {
   font-size: 12px;
+  line-height: 16px;
+  padding: 6px 0 6px 0;
 }
 .cards .card img {
   width: 281.33px;
