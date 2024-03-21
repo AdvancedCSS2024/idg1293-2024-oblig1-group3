@@ -6,27 +6,29 @@ $secondaryBlue: #06befb;
 $licorice: #464646;
 $milk: #FFFFFF;
 $ice: #f1f9ff;
-$gray: #F4F4F4;
 
 body {
-    
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .login-page {
-    display: flex;
-    justify-content: space-between;
 
     .wrapper {
+        display: flex;
+        justify-content: center;
+
         .card_login_info {
             width: 40%;
-            border: 1px solid;
-            background-color: $gray;
+            border: none;
+            background-color: $ice;
+            display: block;
 
             p {
                 text-align: center;
             }
 
             .image_login_info {
+                
                 img {
                     max-width: 10%;
                 }
@@ -34,7 +36,42 @@ body {
         }
         .card_form {
             width: 40%;
-            border: 1px solid;
+            border: none;
+            display: block;
+
+            .content {
+
+                .topbar {
+
+                    .logo_link {
+
+                        img {
+                            max-width: 10%;
+                        }
+                    }
+
+                    .logo_schibsted {
+
+                        img {
+                            max-width: 10%;
+                        }
+                    }
+                }
+
+            }
+
+            .form_buttons {
+                :hover {
+                    cursor: pointer;
+                }
+
+                .button_login {
+                    background-color: $primaryBlue;
+                    justify-content: center;
+                    
+                }
+            }
         }
     }
 }
+

@@ -1,23 +1,38 @@
 body {
-  background-color: #F4F4F4;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-.login-page {
+.login-page .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
-.login-page .card_login_info,
-.login-page .card_form {
-  width: 48%;
+.login-page .wrapper .card_login_info {
+  width: 40%;
+  border: none;
+  background-color: #f1f9ff;
+  display: block;
 }
-
-.card_login_info {
-  background-color: #F4F4F4;
-}
-.card_login_info .image_login_info {
-  display: inline-block;
-  margin: 0 auto;
-}
-.card_login_info p {
+.login-page .wrapper .card_login_info p {
   text-align: center;
+}
+.login-page .wrapper .card_login_info .image_login_info img {
+  max-width: 10%;
+}
+.login-page .wrapper .card_form {
+  width: 40%;
+  border: none;
+  display: block;
+}
+.login-page .wrapper .card_form .content .topbar .logo_link img {
+  max-width: 10%;
+}
+.login-page .wrapper .card_form .content .topbar .logo_schibsted img {
+  max-width: 10%;
+}
+.login-page .wrapper .card_form .form_buttons :hover {
+  cursor: pointer;
+}
+.login-page .wrapper .card_form .form_buttons .button_login {
+  background-color: #0063fb;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

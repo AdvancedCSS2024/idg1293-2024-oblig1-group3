@@ -1,11 +1,16 @@
-.login-page {
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.login-page .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .login-page .wrapper .card_login_info {
   width: 40%;
-  border: 1px solid;
-  background-color: #F4F4F4;
+  border: none;
+  background-color: #f1f9ff;
+  display: block;
 }
 .login-page .wrapper .card_login_info p {
   text-align: center;
@@ -15,5 +20,19 @@
 }
 .login-page .wrapper .card_form {
   width: 40%;
-  border: 1px solid;
+  border: none;
+  display: block;
+}
+.login-page .wrapper .card_form .content .topbar .logo_link img {
+  max-width: 10%;
+}
+.login-page .wrapper .card_form .content .topbar .logo_schibsted img {
+  max-width: 10%;
+}
+.login-page .wrapper .card_form .form_buttons :hover {
+  cursor: pointer;
+}
+.login-page .wrapper .card_form .form_buttons .button_login {
+  background-color: #0063fb;
+  justify-content: center;
 }/*# sourceMappingURL=common.css.map */
