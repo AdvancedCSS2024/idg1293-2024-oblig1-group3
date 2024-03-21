@@ -9,7 +9,7 @@ body {
   position: relative;
   align-items: center;
   justify-content: center;
-  padding: 2.5rem;
+  padding: 5rem;
 }
 .login-page .wrapper .card_login_info {
   width: 60%;
@@ -35,6 +35,7 @@ body {
 .login-page .wrapper .card_form .form_login .topbar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .login-page .wrapper .card_form .form_login .topbar .logo_link img {
   max-width: 30%;
@@ -76,6 +77,9 @@ body {
 .login-page .wrapper .card_form .form_login .content .form .rememberMe p {
   margin: 0;
 }
+.login-page .wrapper .card_form .form_login .content .form .rememberMe span p {
+  font-size: 16px;
+}
 .login-page .wrapper .card_form .form_login .content .form div button {
   border: none;
   background-color: transparent;
@@ -85,6 +89,10 @@ body {
 .login-page .wrapper .card_form .form_login .content .form div button span {
   color: #0063fb;
   border-bottom: 1px solid #0063fb;
+}
+.login-page .wrapper .card_form .form_login .content .form p {
+  margin-bottom: 16px;
+  font-size: 10px;
 }
 .login-page .wrapper .card_form .form_login .content .form_buttons {
   margin-top: 1rem;

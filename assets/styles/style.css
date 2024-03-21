@@ -9,7 +9,7 @@ body {
   position: relative;
   align-items: center;
   justify-content: center;
-  padding: 2.5rem;
+  padding: 5rem;
 }
 .login-page .wrapper .card_login_info {
   width: 60%;
@@ -35,6 +35,7 @@ body {
 .login-page .wrapper .card_form .form_login .topbar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .login-page .wrapper .card_form .form_login .topbar .logo_link img {
   max-width: 30%;
@@ -51,6 +52,9 @@ body {
   border: none;
   border-bottom: 2px solid #b4b4b4;
   background-color: #e8e8e8;
+}
+.login-page .wrapper .card_form .form_login .content .form input p {
+  margin-bottom: 16px;
 }
 .login-page .wrapper .card_form .form_login .content .form input :active {
   border: none;
