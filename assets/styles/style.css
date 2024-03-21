@@ -1,6 +1,6 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 
 .login-page .wrapper {
@@ -23,7 +23,8 @@ body {
   max-width: 10%;
 }
 .login-page .wrapper .card_login_info .text p a {
-  border: none;
+  color: #0063fb;
+  text-decoration: none;
 }
 .login-page .wrapper .card_form {
   width: 40%;
@@ -48,8 +49,8 @@ body {
   width: 100%;
   height: 58px;
   border: none;
-  border-bottom: 2px solid #B4B4B4;
-  background-color: #E8E8E8;
+  border-bottom: 2px solid #b4b4b4;
+  background-color: #e8e8e8;
 }
 .login-page .wrapper .card_form .form_login .content .form input :active {
   border: none;
@@ -94,6 +95,7 @@ body {
   font-size: 17px;
   margin-top: 1rem;
   border-radius: 6px;
+  border: none;
 }
 .login-page .wrapper .card_form .form_login .content .form_buttons :hover {
   cursor: pointer;
@@ -102,4 +104,30 @@ body {
   background-color: #0063fb;
   color: #ffffff;
   justify-content: center;
+}
+.login-page .wrapper .card_form .form_login .content .form_buttons .button_login:hover {
+  background-color: #004abc;
+}
+.login-page .wrapper .card_form .form_login .content .form_buttons .button_register {
+  background-color: transparent;
+  color: #0063fb;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.login-page .wrapper .card_form .form_login .content .form_buttons .button_register:hover {
+  background-color: #f1f9ff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer a {
+  color: #616161;
+  text-decoration: none;
+  font-size: 14px;
+}
+.footer a:hover {
+  cursor: pointer;
+  border-bottom: 1px solid;
 }/*# sourceMappingURL=style.css.map */
