@@ -114,13 +114,15 @@ svg {
   font-size: 14px;
 }
 
-.cards .heading {
+.cards__heading {
   display: flex;
   align-items: center;
   margin: 16px;
 }
 .cards #h1 {
-  font-size: 34px;
+  font-size: 22px;
+  margin: 0 8px 0 0;
+  padding: 0 0 8px 0;
 }
 .cards .h1__link {
   font-size: 14px;
