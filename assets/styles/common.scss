@@ -6,13 +6,8 @@ $milk: #FFFFFF;
 $primaryBlue: #0063fb;
 $secondaryBlue: #06befb;
 $licorice: #464646;
-
-$colors:(
-    milk: #FFFFFF,
-    primaryBlue: #0063fb,
-    secondaryBlue: #06befb,
-    licorice: #464646,
-);
+$stone:#767676;
+$sardine:#C3CCD9;
 
 //BEM stylesheet
 html{
@@ -21,7 +16,7 @@ html{
 
 body{
     background-color: $milk; 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     margin: 0;
     
     a{
@@ -30,11 +25,12 @@ body{
 
     button{
         border: none;
+
+        :hover{
+            cursor: pointer;
+        }
     }
 
-    button:hover{
-        cursor: pointer;
-    }
 }
 
 main,
@@ -94,7 +90,11 @@ svg{
 .searchbar{
     padding-top: 1.6rem;
 
-    div{
+    &__input{
+        margin: 1.6rem 0 1.6rem 0;
+        width: 80%;
+        height: 50px;
+        padding: 12px 40px 12px 8px;
         position: relative;
 
         &__button{
@@ -104,13 +104,6 @@ svg{
             bottom: 0;
             right: 0;
             }
-    }
-
-    &__input{
-        margin: 1.6rem 0 1.6rem 0;
-        width: 80%;
-        height: 50px;
-        padding: 12px 40px 12px 8px;
         }
         
 }
@@ -132,10 +125,19 @@ svg{
     &__marked{
         padding: 16px 4px;
 
-        .icon{
+        :hover{
+            cursor: pointer;
+            stroke: $stone;
+        }
+
+        .icon,
+        .exstern{
             width: 42px;
             height: 28px;
-            outline-color: $secondaryBlue;
+            
+        }
+        .icon{
+            stroke: $secondaryBlue;
         }
 
         span{
@@ -146,18 +148,26 @@ svg{
 }
 
 .cards{
-    #h1{
-        font-size: 34px;
+    
+    &__heading{
+      display: flex;
+      align-items: center;  
+      margin: 16px;
     }
 
-    .h1__link{
+      #h1{
+        font-size: 34px;
+        }
+
+        .h1__link{
         font-size: 14px;
         color: $primaryBlue;
 
         :hover{
             text-decoration: underline;
         }
-    }
+        }
+
     .card{
         display: flex;
         padding: 10px;
