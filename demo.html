@@ -4,8 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Demo page</title>
+  <link rel="stylesheet" href="/assets/styles/style.css">
 </head>
 <body>
   <!-- EDIT THIS PAGE TO SHOW HOW YOU USE ALL THE ELEMENTS IMPLEMENTED IN YOUR DESIGN SYSTEM  -->
+    <main class="login-page">
+      <div class="wrapper">
+        <div class="card_form">
+          <form class="form_login">
+            <div class="content">
+              <div class="form">
+                <input
+                  type="email"
+                  placeholder="Skriv inn din e-postadresse*"
+                  required
+                />
+                <p>*Nødvendig felt</p>
+                <div>
+                  <button type="button">
+                    <span>Glemt passord?</span>
+                  </button>
+                </div>
+                <div class="rememberMe">
+                  <input type="checkbox" checked />
+                  <span>
+                    <p>Hold meg innlogget</p>
+                  </span>
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="none"
+                      viewBox="0 0 16 16"
+                    >
+                      <g clip-path="url(#rxwIyclip0_148_294)">
+                        <path
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                          d="M8 14.25a6.25 6.25 0 100-12.5 6.25 6.25 0 000 12.5zM15.75 8A7.75 7.75 0 11.25 8a7.75 7.75 0 0115.5 0zM8 12.75a.75.75 0 01-.75-.75V8a.75.75 0 011.5 0v4a.75.75 0 01-.75.75zM8 4a1 1 0 100 2 1 1 0 000-2z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="rxwIyclip0_148_294">
+                          <path
+                            fill="currentColor"
+                            d="M0 0h16v16H0z"
+                            transform="rotate(-180 8 8)"
+                          ></path>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="form_buttons">
+                <button class="button_login" type="submit">Logg på</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
 </body>
 </html>

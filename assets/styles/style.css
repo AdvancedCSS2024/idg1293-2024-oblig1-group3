@@ -53,9 +53,6 @@ body {
   border-bottom: 2px solid #b4b4b4;
   background-color: #e8e8e8;
 }
-.login-page .wrapper .card_form .form_login .content .form input p {
-  margin-bottom: 16px;
-}
 .login-page .wrapper .card_form .form_login .content .form input :active {
   border: none;
   border-bottom: 2px solid #0063fb;
@@ -80,6 +77,9 @@ body {
 .login-page .wrapper .card_form .form_login .content .form .rememberMe p {
   margin: 0;
 }
+.login-page .wrapper .card_form .form_login .content .form .rememberMe span p {
+  font-size: 16px;
+}
 .login-page .wrapper .card_form .form_login .content .form div button {
   border: none;
   background-color: transparent;
@@ -89,6 +89,10 @@ body {
 .login-page .wrapper .card_form .form_login .content .form div button span {
   color: #0063fb;
   border-bottom: 1px solid #0063fb;
+}
+.login-page .wrapper .card_form .form_login .content .form p {
+  margin-bottom: 16px;
+  font-size: 10px;
 }
 .login-page .wrapper .card_form .form_login .content .form_buttons {
   margin-top: 1rem;
