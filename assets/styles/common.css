@@ -156,4 +156,9 @@ svg {
   top: 0;
   right: 0;
   background-color: transparent;
+}
+.cards .card__1 .hidden svg, .cards .card__2 .hidden svg, .cards .card__3 .hidden svg {
+  stroke: #E5E5E5;
+  width: 24px;
+  height: 24px;
 }/*# sourceMappingURL=common.css.map */

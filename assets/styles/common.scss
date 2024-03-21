@@ -8,6 +8,7 @@ $secondaryBlue: #06befb;
 $licorice: #464646;
 $stone:#767676;
 $sardine:#C3CCD9;
+$heartOutline: #E5E5E5;
 
 //BEM stylesheet
 html{
@@ -199,6 +200,12 @@ svg{
                 top: 0;
                 right: 0;
                 background-color: transparent;
+
+                svg{
+                    stroke: $heartOutline;
+                    width: 24px;
+                    height: 24px;
+                }
             }
         }
 
