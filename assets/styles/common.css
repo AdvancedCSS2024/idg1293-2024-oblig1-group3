@@ -4,16 +4,18 @@ html {
 
 body {
   background-color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   margin: 0;
+  color: #464646;
 }
 body a {
   text-decoration: none;
+  color: #464646;
 }
 body button {
   border: none;
 }
-body button:hover {
+body button :hover {
   cursor: pointer;
 }
 
@@ -65,21 +67,28 @@ svg {
 
 .searchbar {
   padding-top: 1.6rem;
+  margin: 1.6rem 0 1.6rem 0;
 }
 .searchbar__input {
-  margin: 1.6rem 0 1.6rem 0;
-  width: 90%;
+  width: 80%;
   height: 50px;
   padding: 12px 40px 12px 8px;
 }
-.searchbar__button {
-  position: absolute;
-  top: 5rem;
-  right: 24rem;
+.searchbar__input__button {
   background-color: transparent;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
-.searchbar__map {
+.searchbar .map {
+  margin-left: 3.2rem;
+  margin-right: 1.6rem;
+}
+.searchbar .map__link {
   font-size: 16px;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid {
@@ -90,18 +99,34 @@ svg {
 .grid__marked {
   padding: 16px 4px;
 }
-.grid__marked .icon {
+.grid__marked :hover {
+  cursor: pointer;
+}
+.grid__marked .icon,
+.grid__marked .exstern {
   width: 42px;
   height: 28px;
-  outline-color: #06befb;
+}
+.grid__marked .icon {
+  stroke: #06befb;
+}
+.grid__marked .icon :hover {
+  stroke: #767676;
 }
 .grid__marked span {
   display: block;
   font-size: 14px;
 }
 
+.cards__heading {
+  display: flex;
+  align-items: center;
+  margin: 16px;
+}
 .cards #h1 {
-  font-size: 34px;
+  font-size: 22px;
+  margin: 0 8px 0 0;
+  padding: 0 0 8px 0;
 }
 .cards .h1__link {
   font-size: 14px;
@@ -111,28 +136,52 @@ svg {
   text-decoration: underline;
 }
 .cards .card {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  position: relative;
   padding: 10px;
+}
+.cards .card h2 {
+  margin-bottom: 8px;
+  padding-right: 44px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
 }
 .cards .card .text16 {
   font-size: 16px;
   font-weight: 700;
+  padding: 10px 16px 10px 10px;
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  color: #FFFFFF;
 }
 .cards .card .text12 {
   font-size: 12px;
+  line-height: 16px;
+  padding: 6px 0 6px 0;
 }
-.cards .card img {
+.cards .card__img {
   width: 281.33px;
   height: 290.67px;
+  border: 0.667px;
   border-radius: 8px;
+  background-color: #464646;
 }
 .cards .card__1, .cards .card__2, .cards .card__3 {
   display: block;
   position: relative;
 }
-.cards .card__1 .hidden, .cards .card__2 .hidden, .cards .card__3 .hidden {
+.cards .card__1 button, .cards .card__2 button, .cards .card__3 button {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 1rem;
+  right: 2.5rem;
   background-color: transparent;
+}
+.cards .card__1 button svg, .cards .card__2 button svg, .cards .card__3 button svg {
+  stroke: #E5E5E5;
+  width: 24px;
+  height: 24px;
 }/*# sourceMappingURL=common.css.map */
