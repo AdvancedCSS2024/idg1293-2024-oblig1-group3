@@ -1,77 +1,169 @@
 // YOU MUST USE BEM HERE
-// IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE 
+// IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE
 // Example: input, button, card ...
 $primaryBlue: #0063fb;
 $secondaryBlue: #06befb;
 $licorice: #464646;
-$milk: #FFFFFF;
+$milk: #ffffff;
 $ice: #f1f9ff;
+$sardine: #C3CCD9;
+$lightGray: #E8E8E8;
+$gray: #B4B4B4;
+$backgroundColor: #F8F8F8;
 
 body {
     font-family: Helvetica, Arial, sans-serif;
+    background-color: $backgroundColor;
 }
 
 .login-page {
-
     .wrapper {
         display: flex;
+        flex: 1;
+        position: relative;
+        align-items: center;
         justify-content: center;
+        padding: 2.5rem;
 
         .card_login_info {
-            width: 40%;
+            width: 60%;
             border: none;
             background-color: $ice;
             display: block;
-
-            p {
-                text-align: center;
-            }
+            max-height: 480px;
+            text-align: center;
 
             .image_login_info {
-                
                 img {
                     max-width: 10%;
+                }
+            }
+
+            .text {
+                p {
+
+                    a {
+                        color: $primaryBlue;
+                        text-decoration: none;
+                    }
                 }
             }
         }
         .card_form {
             width: 40%;
             border: none;
-            display: block;
+            display: flex;
+            background-color: $milk;
 
-            .content {
-
+            .form_login {
                 .topbar {
+                    display: flex;
+                    align-items: center;
 
                     .logo_link {
-
                         img {
-                            max-width: 10%;
+                            max-width: 30%;
                         }
                     }
 
                     .logo_schibsted {
-
                         img {
-                            max-width: 10%;
+                            max-width: 40%;
                         }
                     }
                 }
-
-            }
-
-            .form_buttons {
-                :hover {
-                    cursor: pointer;
-                }
-
-                .button_login {
-                    background-color: $primaryBlue;
-                    justify-content: center;
+                .content {
+                    padding: 0 2rem 2.5rem;
                     
+                    .form {
+                        
+                        input {
+                            width: 100%;
+                            height: 58px;
+                            border: none;
+                            border-bottom: 2px solid $gray;
+                            background-color: $lightGray;
+
+                            :active {
+                                border: none;
+                                border-bottom: 2px solid $primaryBlue;
+                                background-color: green;
+                            }
+                        }
+
+                        .rememberMe {
+                            display: flex;
+                            align-items: center;
+
+                            input {
+                                width: 5%;
+                                margin-right: 10px;
+                            }
+
+                            button {
+                                display: flex;
+                                align-items: center;
+                                cursor: pointer;
+                                border: none;
+                                background-color: transparent;
+                                padding: 10px 20px;
+                            }
+
+                            p {
+                                margin: 0;
+                            }
+                        }
+
+                        div {
+
+                            button {
+                                border: none;
+                                background-color: transparent;
+                                padding: 0;
+                                cursor: pointer;
+
+                                span {
+                                    color: $primaryBlue;
+                                    border-bottom: 1px solid $primaryBlue;
+                                }
+                            }
+                        }
+                    }
+
+                    .form_buttons {
+                        margin-top: 1rem;
+
+                        button {
+                            width: 100%;
+                            padding: 14px 40px;
+                            font-size: 17px;
+                            margin-top: 1rem;
+                            border-radius: 6px;
+                            border: none;
+                        }
+
+                        :hover {
+                            cursor: pointer;
+                        }
+
+                        .button_login {
+                            background-color: $primaryBlue;
+                            color: $milk;
+                            justify-content: center;
+                        }
+
+                        .button_register {
+                            background-color: transparent;
+                            color: $primaryBlue;
+
+                            :hover {
+                                background-color: $ice;
+                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                            }
+                        }
+                    }
                 }
             }
         }
     }
 }
-

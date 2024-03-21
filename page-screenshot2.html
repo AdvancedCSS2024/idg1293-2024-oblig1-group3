@@ -35,7 +35,7 @@
           </div>
         </div>
         <div class="card_form">
-          <div class="content">
+          <form class="form_login">
             <div class="topbar">
               <div class="logo_link">
                 <a href="https://www.finn.no/">
@@ -47,74 +47,71 @@
                 </a>
               </div>
               <div class="logo_schibsted">
-                <img
-                  class="TopBar__TopBar__PlatformLogo___2roI_"
-                  src="https://d3iwtia3ndepsv.cloudfront.net/web/v4.5.31/assets/4c671371b02d586f499a4d89bf58fa50.png"
-                  alt="OK"
-                />
+                <img class="TopBar__TopBar__PlatformLogo___2roI_" src="https://d3iwtia3ndepsv.cloudfront.net/web/v4.5.31/assets/4c671371b02d586f499a4d89bf58fa50.png" alt="OK">
               </div>
             </div>
-          </div>
-          <div class="form">
-            <h1>Logg inn</h1>
-            <input
-              type="email"
-              placeholder="Skriv inn din e-postadresse*"
-              required
-            />
-            <p>*Nødvendig felt</p>
-            <input
-              type="password"
-              placeholder="Vennligst oppgi passordet ditt*"
-              required
-            />
-            <p>*Nødvendig felt</p>
-            <div>
-              <button type="button">
-                <span>Glemt passord?</span>
-              </button>
-            </div>
-            <div class="rememberMe">
-              <div>
-                <label>
-                  <span class="checkbox"></span>
+            <div class="content">
+              <div class="form">
+                <h1>Logg inn</h1>
+                <input
+                  type="email"
+                  placeholder="Skriv inn din e-postadresse*"
+                  required
+                />
+                <p>*Nødvendig felt</p>
+                <input
+                  type="password"
+                  placeholder="Vennligst oppgi passordet ditt*"
+                  required
+                />
+                <p>*Nødvendig felt</p>
+                <div>
+                  <button type="button">
+                    <span>Glemt passord?</span>
+                  </button>
+                </div>
+                <div class="rememberMe">
+                  <input type="checkbox" checked />
                   <span>
                     <p>Hold meg innlogget</p>
                   </span>
-                </label>
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="none"
+                      viewBox="0 0 16 16"
+                    >
+                      <g clip-path="url(#rxwIyclip0_148_294)">
+                        <path
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                          d="M8 14.25a6.25 6.25 0 100-12.5 6.25 6.25 0 000 12.5zM15.75 8A7.75 7.75 0 11.25 8a7.75 7.75 0 0115.5 0zM8 12.75a.75.75 0 01-.75-.75V8a.75.75 0 011.5 0v4a.75.75 0 01-.75.75zM8 4a1 1 0 100 2 1 1 0 000-2z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="rxwIyclip0_148_294">
+                          <path
+                            fill="currentColor"
+                            d="M0 0h16v16H0z"
+                            transform="rotate(-180 8 8)"
+                          ></path>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
               </div>
-              <input type="checkbox" />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="none"
-                viewBox="0 0 16 16"
-              >
-                <g clip-path="url(#rxwIyclip0_148_294)">
-                  <path
-                    fill="currentColor"
-                    fill-rule="evenodd"
-                    d="M8 14.25a6.25 6.25 0 100-12.5 6.25 6.25 0 000 12.5zM15.75 8A7.75 7.75 0 11.25 8a7.75 7.75 0 0115.5 0zM8 12.75a.75.75 0 01-.75-.75V8a.75.75 0 011.5 0v4a.75.75 0 01-.75.75zM8 4a1 1 0 100 2 1 1 0 000-2z"
-                    clip-rule="evenodd"
-                  ></path>
-                </g>
-                <defs>
-                  <clipPath id="rxwIyclip0_148_294">
-                    <path
-                      fill="currentColor"
-                      d="M0 0h16v16H0z"
-                      transform="rotate(-180 8 8)"
-                    ></path>
-                  </clipPath>
-                </defs>
-              </svg>
+              <div class="form_buttons">
+                <button class="button_login" type="submit">Logg på</button>
+                <button class="button_register" type="button">
+                  Opprette ny konto
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="form_buttons">
-            <button class="button_login" type="submit">Logg på</button>
-            <button class="button_register" type="button">Opprette ny konto</button>
-          </div>
+          </form>
         </div>
       </div>
     </main>
