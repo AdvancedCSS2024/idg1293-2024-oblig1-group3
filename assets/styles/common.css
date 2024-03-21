@@ -53,11 +53,6 @@ body {
   border-bottom: 2px solid #b4b4b4;
   background-color: #e8e8e8;
 }
-.login-page .wrapper .card_form .form_login .content .form input :active {
-  border: none;
-  border-bottom: 2px solid #0063fb;
-  background-color: green;
-}
 .login-page .wrapper .card_form .form_login .content .form .rememberMe {
   display: flex;
   align-items: center;

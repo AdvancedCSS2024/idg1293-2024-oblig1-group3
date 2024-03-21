@@ -84,12 +84,6 @@ body {
                             border: none;
                             border-bottom: 2px solid $gray;
                             background-color: $lightGrey;
-
-                            :active {
-                                border: none;
-                                border-bottom: 2px solid $primaryBlue;
-                                background-color: green;
-                            }
                         }
 
                         .rememberMe {
