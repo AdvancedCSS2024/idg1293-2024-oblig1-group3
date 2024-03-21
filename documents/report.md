@@ -1,7 +1,7 @@
-Started identifying the main components in each screenshot and drew on top of the images.
-Created a branch for each of the team members.
-Started to set up the HTML for each webpage and trying our best to use BEM while doing it.
-After having the main structure in the HTML file we started working on the common.scss.
-Tried our best to use SASS and to nest as best as we could.
+Started the project with observing and identifying the main system of Finn's designsystem. 
+Marked all the components on the screen shots.
+Inspected the finn.no home page and the log in page. Inspected the html and css elements and found out how the code is nested.
+Made the HTML file for the screen shot, as the task said. Found out later that the order in the asignment is wrong. That the demo.html was suposed to be written before the screenshot.html. 
+Wrote the html and scss code, and made it look like finn.no while inspecting the finn.no site. The html and css code is implemented with bem and sass.  
+Implemented icons, links, buttons, inputs and in the demo.html file. 
 Used the svg and images found in finn.no, using inspect and copying the html from there.
-Added our components to the demo.html and linked it to style.css.
